@@ -1,0 +1,5 @@
+hostname, SHUTDOWN_REASON, INTERFACE_LIST       , BACKOUT
+sw1            , test demo      , "Gig 1/0/4,Gig 1/0/5", false
+sw2            , test demo      , "Gig 1/0/5,Gig 1/0/6", false
+sw3            , test demo      , "Gig 1/0/6,Gig 1/0/7", false
+sw4            , test demo      , "Gig 1/0/7,Gig 1/0/8", false

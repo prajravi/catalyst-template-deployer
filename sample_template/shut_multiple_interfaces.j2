@@ -1,0 +1,22 @@
+{% set INTERFACE_LIST = INTERFACE_LIST %} {# comma-seperated interface names - GigabitEthernet0/1,GigabitEthernet0/2 #}
+{% set SHUTDOWN_REASON = SHUTDOWN_REASON %} {# SHUTDOWN_REASON: interfacedescription "CHG007 Decommissioned" #}
+{% set BACKOUT = BACKOUT %} {# BACKOUT: set to "true" to rollback, anyother value will shut the interface #}
+
+
+{% if BACKOUT|lower == "true" %}
+{% for iface in INTERFACE_LIST.split(',') %}
+interface {{ iface.strip() }}
+ no description
+ no shutdown
+!
+{% endfor %}
+{% else %}
+
+{% for iface in INTERFACE_LIST.split(',') %}
+interface {{ iface.strip() }}
+ description {{ SHUTDOWN_REASON }}
+ shutdown
+!
+{% endfor %}
+
+{% endif %}
