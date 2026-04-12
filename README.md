@@ -21,6 +21,11 @@ devices in a single run.
 
 ---
 
+## Video Walkthrough
+[![Watch the video](https://img.youtube.com/vi/mhfho0Os4tM/maxresdefault.jpg)](https://youtu.be/mhfho0Os4tM)
+
+---
+
 ## Requirements
 
 - Python 3.10 or later
