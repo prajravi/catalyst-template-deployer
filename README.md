@@ -238,3 +238,33 @@ catalyst-template-deployer/
 
 - Never hard-code passwords in `config.py`. Use environment variables (`CONTROLLER_PASSWORD`) instead, especially in shared or version-controlled environments.
 - Add `config.py` to your `.gitignore` to avoid accidentally committing credentials.
+
+---
+
+## Related Sandbox
+
+You can test this tool using the Catalyst Center Sandbox available on DevNet:
+
+[Catalyst Center Sandbox](https://devnetsandbox.cisco.com/DevNet/catalog/catalyst-center-sandbox_catalyst-center)
+
+---
+
+## Getting Help
+
+If you have questions, concerns, bug reports, etc., please create an issue in this repository's Issue Tracker.
+
+---
+
+## Getting Involved
+
+Contributions are welcome! See [CONTRIBUTING](./CONTRIBUTING.md) for details on how to submit pull requests, report issues, or suggest improvements.
+
+Please adhere to our [Code of Conduct](./CODE_OF_CONDUCT.md) at all times.
+
+---
+
+## Credits and References
+
+- [Catalyst Center API Documentation](https://developer.cisco.com/docs/dna-center/)
+- [dnacentersdk Python Library](https://github.com/cisco-en-programmability/dnacentersdk)
+- [DevNet Code Exchange](https://developer.cisco.com/codeexchange/)
